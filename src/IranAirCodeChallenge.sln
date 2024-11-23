@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IranAirCodeChallenge", "IranAirCodeChallenge\IranAirCodeChallenge.csproj", "{16F82973-FD64-4EEA-934F-607A11066C72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7D593C57-72A8-4C2A-9549-835510D42935}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{16F82973-FD64-4EEA-934F-607A11066C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F82973-FD64-4EEA-934F-607A11066C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16F82973-FD64-4EEA-934F-607A11066C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D593C57-72A8-4C2A-9549-835510D42935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D593C57-72A8-4C2A-9549-835510D42935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D593C57-72A8-4C2A-9549-835510D42935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D593C57-72A8-4C2A-9549-835510D42935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
