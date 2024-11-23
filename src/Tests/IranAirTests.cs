@@ -1,5 +1,8 @@
+using System.Security.Cryptography.X509Certificates;
 using FluentAssertions;
 using IranAirCodeChallenge.Strategies;
+using IranAirCodeChallenge.Utils;
+using Tests.FakeObjects;
 
 namespace Tests;
 
@@ -16,6 +19,24 @@ public class IranAirTests
         var loanFromBankAStrategy = new LoanFromBankAStrategy();
 
         var installmentValue = loanFromBankAStrategy.Handle(totalLoanAmount);
+
+        installmentValue.Should().Be(expectedInstallmentValue);
+    }
+
+    [Theory(DisplayName =
+        "There is a bank called B, When the company asks from bank B to get a loan, Then the company should get the loan in 8 installments with an interest rate of between -20% and 50%")]
+    [InlineData(100000000, -20, 11562500)]
+    [InlineData(300000000, 30, 41718750)]
+    [InlineData(500000000, 50, 74218750)]
+    public void
+        LoanFromBankBShouldBePaidInEightInstallmentsWithAnInterestRateBetweenMinusTwentyPercentsAndFiftyPercents(
+            decimal totalLoanAmount, int interestRate, long expectedInstallmentValue
+        )
+    {
+        var loanFromBankBStrategy = new FakeLoanFromBankBStrategy();
+        loanFromBankBStrategy.ReturnInterestRate(interestRate);
+
+        var installmentValue = loanFromBankBStrategy.Handle(totalLoanAmount);
 
         installmentValue.Should().Be(expectedInstallmentValue);
     }

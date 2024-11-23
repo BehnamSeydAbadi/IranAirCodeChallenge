@@ -1,19 +1,8 @@
 ﻿namespace IranAirCodeChallenge.Strategies;
 
-public class LoanFromBankAStrategy
+public class LoanFromBankAStrategy : AbstractStrategy
 {
-    public long Handle(decimal totalLoanAmount)
-    {
-        //Source: https://khanesarmaye.com/calculate-interest-on-bank-loans/
-        //مبلغ کلی وام × نرخ سود × (تعداد اقساط + ۱) تقسیم بر ۲۴۰۰.
+    protected override int GetInstallmentsCount() => 10;
 
-        const int totalInstallments = 10;
-        const decimal defaultDivision = 2400m;
-
-        decimal interestValueInDecimal = totalLoanAmount * (totalInstallments + 1) * 20 / defaultDivision;
-        var interestValueInNaturalNumber = (long)Math.Floor(interestValueInDecimal);
-
-        var installmentValueInDecimal = (totalLoanAmount + interestValueInNaturalNumber) / totalInstallments;
-        return (long)Math.Floor(installmentValueInDecimal);
-    }
+    protected override int GetInterestRate() => 20;
 }

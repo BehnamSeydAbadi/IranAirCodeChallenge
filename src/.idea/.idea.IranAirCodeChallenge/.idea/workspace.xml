@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;">
+    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="refactor: Refactor bank A loan logic">
+      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Exceptions/InvalidTotalLoanAmountException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/AbstractStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankBStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Utils/Guard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/FakeObjects/FakeLoanFromBankBStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IranAirCodeChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IranAirCodeChallenge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankAStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankAStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/IranAirTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/IranAirTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +27,13 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -121,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732394228590</updated>
       <workItem from="1732394230032" duration="50000" />
-      <workItem from="1732394340732" duration="4727000" />
+      <workItem from="1732394340732" duration="8032000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -147,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732400197989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor: Refactor bank A loan logic">
+      <option name="closed" value="true" />
+      <created>1732401666087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732401666087</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +195,26 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="remove idea folder" />
     <MESSAGE value="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;" />
+    <MESSAGE value="refactor: Refactor bank A loan logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Refactor bank A loan logic" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tests/IranAirTests.cs</url>
+          <line>40</line>
+          <properties documentPath="D:\source\repos\IranAirCodeChallenge\src\Tests\IranAirTests.cs" containingFunctionPresentation="Method 'LoanFromBankBShouldBePaidInEightInstallmentsWithAnInterestRateBetweenMinusTwentyPercentsAndFiftyPercents'">
+            <startOffsets>
+              <option value="1670" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1725" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
