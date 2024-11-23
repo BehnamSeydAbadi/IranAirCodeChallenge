@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="remove idea folder">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.IranAirCodeChallenge/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Endpoints.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/IranAirTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge.sln" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Program.cs" afterDir="false" />
+    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;">
+      <change beforePath="$PROJECT_DIR$/Tests/IranAirTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/IranAirTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732394228590</updated>
       <workItem from="1732394230032" duration="50000" />
-      <workItem from="1732394340732" duration="3810000" />
+      <workItem from="1732394340732" duration="4727000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -144,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732394593206</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;">
+      <option name="closed" value="true" />
+      <created>1732400197988</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732400197989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,25 +171,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="remove idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove idea folder" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Tests/IranAirTests.cs</url>
-          <line>23</line>
-          <properties documentPath="D:\source\repos\IranAirCodeChallenge\src\Tests\IranAirTests.cs" containingFunctionPresentation="Method 'LoanFromBankAShouldBePaidInTenInstallmentsWithAnInterestRateOf20Percents'">
-            <startOffsets>
-              <option value="1056" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1057" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;" />
   </component>
 </project>

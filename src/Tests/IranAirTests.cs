@@ -1,4 +1,5 @@
 using FluentAssertions;
+using IranAirCodeChallenge.Strategies;
 
 namespace Tests;
 
@@ -9,21 +10,13 @@ public class IranAirTests
     [InlineData(100000000, 10916666)]
     [InlineData(500000000, 54583333)]
     public void LoanFromBankAShouldBePaidInTenInstallmentsWithAnInterestRateOf20Percents(
-        decimal totalLoanAmount, long installmentValue
+        decimal totalLoanAmount, long expectedInstallmentValue
     )
     {
-        //Source: https://khanesarmaye.com/calculate-interest-on-bank-loans/
-        //مبلغ کلی وام × نرخ سود × (تعداد اقساط + ۱) تقسیم بر ۲۴۰۰.
+        var loanFromBankAStrategy = new LoanFromBankAStrategy();
 
-        const int totalInstallments = 10;
-        const decimal defaultDivision = 2400m;
+        var installmentValue = loanFromBankAStrategy.Handle(totalLoanAmount);
 
-        decimal interestValueInDecimal = totalLoanAmount * (totalInstallments + 1) * 20 / defaultDivision;
-        var interestValueInNaturalNumber = (long)Math.Floor(interestValueInDecimal);
-
-        var installmentValueInDecimal = (totalLoanAmount + interestValueInNaturalNumber) / totalInstallments;
-        var installmentValueInNaturalNumber = (long)Math.Floor(installmentValueInDecimal);
-
-        installmentValueInNaturalNumber.Should().Be(installmentValue);
+        installmentValue.Should().Be(expectedInstallmentValue);
     }
 }
