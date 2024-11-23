@@ -1,0 +1,6 @@
+@IranAirCodeChallenge_HostAddress = http://localhost:5155
+
+GET {{IranAirCodeChallenge_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
