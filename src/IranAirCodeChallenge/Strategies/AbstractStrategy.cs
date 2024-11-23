@@ -1,9 +1,14 @@
-﻿namespace IranAirCodeChallenge.Strategies;
+﻿using IranAirCodeChallenge.Exceptions;
+using IranAirCodeChallenge.Utils;
+
+namespace IranAirCodeChallenge.Strategies;
 
 public abstract class AbstractStrategy
 {
     public virtual long Handle(decimal totalLoanAmount)
     {
+        Guard.Assert<InvalidTotalLoanAmountException>(ValidateTotalLoadAmount(totalLoanAmount));
+
         //Source: https://khanesarmaye.com/calculate-interest-on-bank-loans/
         //مبلغ کلی وام × نرخ سود × (تعداد اقساط + ۱) تقسیم بر ۲۴۰۰.
 
@@ -16,6 +21,11 @@ public abstract class AbstractStrategy
 
         var installmentValueInDecimal = (totalLoanAmount + interestValueInNaturalNumber) / installmentsCount;
         return (long)Math.Floor(installmentValueInDecimal);
+    }
+
+    protected virtual bool ValidateTotalLoadAmount(decimal totalLoanAmount)
+    {
+        return 0 < totalLoanAmount;
     }
 
     protected abstract int GetInstallmentsCount();

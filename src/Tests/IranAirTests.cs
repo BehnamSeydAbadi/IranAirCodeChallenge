@@ -1,5 +1,6 @@
 using System.Security.Cryptography.X509Certificates;
 using FluentAssertions;
+using IranAirCodeChallenge.Exceptions;
 using IranAirCodeChallenge.Strategies;
 using IranAirCodeChallenge.Utils;
 using Tests.FakeObjects;
@@ -39,5 +40,22 @@ public class IranAirTests
         var installmentValue = loanFromBankBStrategy.Handle(totalLoanAmount);
 
         installmentValue.Should().Be(expectedInstallmentValue);
+    }
+
+    [Theory(DisplayName =
+        "There is a bank called B, When the company asks from bank B to get a loan lower than 100000000 or more than 500000000, Then an error should be thrown")]
+    [InlineData(-100000000)]
+    [InlineData(99999999)]
+    [InlineData(500000001)]
+    public void
+        LoanInInvalidValueFromBankBAnErrorShouldBeThrown(
+            decimal totalLoanAmount
+        )
+    {
+        var loanFromBankBStrategy = new LoanFromBankBStrategy();
+
+        var action = () => loanFromBankBStrategy.Handle(totalLoanAmount);
+
+        action.Should().ThrowExactly<InvalidTotalLoanAmountException>();
     }
 }

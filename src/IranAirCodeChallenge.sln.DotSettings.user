@@ -9,5 +9,6 @@
     &lt;TestId&gt;xUnit::7D593C57-72A8-4C2A-9549-835510D42935::net8.0::Tests.IranAirTests.LoanFromBankAShouldBePaidInTenInstallmentsWithAnInterestRateOf20Percents&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7D593C57-72A8-4C2A-9549-835510D42935::net8.0::Tests.IranAirTests.X&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7D593C57-72A8-4C2A-9549-835510D42935::net8.0::Tests.IranAirTests.LoanFromBankBShouldBePaidInEightInstallmentsWithAnInterestRateBetweenMinusTwentyPercentsAndFiftyPercents&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7D593C57-72A8-4C2A-9549-835510D42935::net8.0::Tests.IranAirTests.LoanInInvalidValueFromBankBAnErrorShouldBeThrown&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

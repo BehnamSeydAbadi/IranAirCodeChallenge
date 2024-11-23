@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="refactor: Refactor bank A loan logic">
-      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Exceptions/InvalidTotalLoanAmountException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/AbstractStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankBStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Utils/Guard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/FakeObjects/FakeLoanFromBankBStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IranAirCodeChallenge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IranAirCodeChallenge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankAStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Strategies/LoanFromBankAStrategy.cs" afterDir="false" />
+    <list default="true" id="53b340ca-b7db-416c-b91c-66bf5bca400c" name="Changes" comment="test: Pass &quot;There is a bank called B, When the company asks from bank B to get a loan, Then the company should get the loan in 8 installments with an interest rate of between -20% and 50%&quot;">
+      <change beforePath="$PROJECT_DIR$/IranAirCodeChallenge/Exceptions/InvalidTotalLoanAmountException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IranAirCodeChallenge/Exceptions/InvalidTotalLoanAmountException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/IranAirTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/IranAirTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732394228590</updated>
       <workItem from="1732394230032" duration="50000" />
-      <workItem from="1732394340732" duration="8032000" />
+      <workItem from="1732394340732" duration="8559000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -170,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732401666087</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test: Pass &quot;There is a bank called B, When the company asks from bank B to get a loan, Then the company should get the loan in 8 installments with an interest rate of between -20% and 50%&quot;">
+      <option name="closed" value="true" />
+      <created>1732404958555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732404958555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,23 +197,24 @@
     <MESSAGE value="remove idea folder" />
     <MESSAGE value="test: Pass &quot;There is a bank called A, When the company asks from bank A to get a loan, Then the company should get the loan in 10 installments with an interest rate of 20%&quot;" />
     <MESSAGE value="refactor: Refactor bank A loan logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Refactor bank A loan logic" />
+    <MESSAGE value="test: Pass &quot;There is a bank called B, When the company asks from bank B to get a loan, Then the company should get the loan in 8 installments with an interest rate of between -20% and 50%&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: Pass &quot;There is a bank called B, When the company asks from bank B to get a loan, Then the company should get the loan in 8 installments with an interest rate of between -20% and 50%&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Tests/IranAirTests.cs</url>
-          <line>40</line>
-          <properties documentPath="D:\source\repos\IranAirCodeChallenge\src\Tests\IranAirTests.cs" containingFunctionPresentation="Method 'LoanFromBankBShouldBePaidInEightInstallmentsWithAnInterestRateBetweenMinusTwentyPercentsAndFiftyPercents'">
+          <line>58</line>
+          <properties documentPath="D:\source\repos\IranAirCodeChallenge\src\Tests\IranAirTests.cs" containingFunctionPresentation="Method 'LoanInInvalidValueFromBankBAnErrorShouldBeThrown'">
             <startOffsets>
-              <option value="1670" />
+              <option value="2319" />
             </startOffsets>
             <endOffsets>
-              <option value="1725" />
+              <option value="2383" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
